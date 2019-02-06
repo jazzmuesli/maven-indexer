@@ -53,6 +53,9 @@ public final class Record
             this.proto = proto;
         }
 
+        public String getName() {
+        	return name;
+        }
         public T coerce( final Object object )
         {
             return (T) proto.cast( object );
